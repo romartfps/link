@@ -1,0 +1,118 @@
+body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #ffd6e0, #ffeaf4);
+            text-align: center;
+        }
+
+        html,
+        body {
+            height: 100%;
+            /* ensure full height */
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #ffd6e0, #ffeaf4);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* vertical center */
+            align-items: center;
+            /* horizontal center */
+            overflow: hidden;
+        }
+
+
+        h1 {
+            margin-top: 120px;
+            font-size: 40px;
+            color: #b30059;
+            transition: 0.3s;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #yesBtn {
+            background-color: #ff4d88;
+            color: white;
+            box-shadow: 0 5px 15px rgba(255, 77, 136, 0.4);
+        }
+
+        #yesBtn:hover {
+            transform: scale(1.1);
+        }
+
+        #noBtn {
+            background-color: #999;
+            color: white;
+            position: absolute;
+        }
+
+        #openLetterBtn {
+            display: none;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #b30059;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 0 20px rgba(179, 0, 89, 0.6);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #ff99c8;
+            }
+
+            to {
+                box-shadow: 0 0 25px #ff4d88;
+            }
+        }
+
+        #letter {
+            display: none;
+            margin: 40px auto;
+            width: 60%;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+            color: #444;
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: fixed;
+            bottom: -10px;
+            font-size: 20px;
+            animation: floatUp 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
